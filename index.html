@@ -10,11 +10,16 @@ header{padding:60px 20px}
 .cta{display:inline-block;margin-top:20px;padding:12px 25px;background:#111;color:#fff;text-decoration:none;border-radius:30px}
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding:40px}
 img{width:100%;height:260px;object-fit:cover;border-radius:15px}
-.top-left{position:absolute;top:0;left:0;width:240px;height:240px;object-fit:cover;border-radius:15px;}
+.top-left{position:absolute;top:0;left:0;width:240px;height:240px;object-fit:contain;border-radius:15px;}
+
+/* reduz um pouco o logo em telas pequenas para não ser cortado */
+@media(max-width:600px){
+  .top-left{width:180px;height:180px;}
+}
 </style>
 </head>
 <body>
-<img class="top-left" src="images/projeto1/img14.jpeg" alt="Imagem 14">
+<img class="top-left" src="images/projeto1/Logo.png" alt="Logo CR Ambientes Planejados">
 
 <header>
 <h1>CR Ambientes Planejados</h1>
