@@ -6,16 +6,16 @@
 <title>CR Ambientes Planejados</title>
 <style>
 body{font-family:Arial,sans-serif;background:#fff;margin:0;text-align:center;position:relative}
-header{padding:60px 20px 20px 260px}
+header{padding:320px 20px 20px 20px}
 .cta{display:inline-block;margin-top:20px;padding:12px 25px;background:#111;color:#fff;text-decoration:none;border-radius:30px}
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding:40px}
 img{width:100%;height:260px;object-fit:cover;border-radius:15px}
-.top-left{position:absolute;top:0;left:0;width:240px;height:240px;object-fit:contain;border-radius:15px;display:block;z-index:10;}
+.top-left{position:absolute;top:20px;left:50%;transform:translateX(-50%);width:240px;height:240px;object-fit:contain;border-radius:15px;display:block;z-index:10;}
 
 /* reduz um pouco o logo em telas pequenas para não ser cortado e ajusta o espaçamento do header */
 @media(max-width:600px){
   .top-left{width:180px;height:180px;}
-  header{padding:60px 20px 20px 200px}
+  header{padding:240px 20px 20px 20px}
 }
 </style>
 </head>
